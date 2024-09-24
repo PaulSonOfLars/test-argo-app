@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-guestbook
+  namespace: argocd
+spec:
+  destination:
+    namespace: helm-guestbook
+    name: in-cluster
+  project: default
+  source:
+    path: guestbook
+    repoURL: git@github.com:PaulSonOfLars/test-argo-app.git
+    targetRevision: HEAD
