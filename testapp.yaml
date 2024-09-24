@@ -11,4 +11,4 @@ spec:
   source:
     path: guestbook
     repoURL: git@github.com:PaulSonOfLars/test-argo-app.git
-    targetRevision: 2024-09-24
+    targetRevision: 2024-09-24-test
